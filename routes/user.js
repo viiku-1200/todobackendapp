@@ -17,6 +17,9 @@ router.post("/login",log)
 
 router.get("/logout",logout)
 router.get("/single",isAuthenticated,getSingleUser)
+router.get("/",(req,res)=>{
+    res.send("nice")
+})
 
 export default router
 
